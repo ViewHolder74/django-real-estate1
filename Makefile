@@ -49,7 +49,7 @@ flake8:
 	sudo docker compose exec api flake8 .
 
 black-check:
-	sudo docker compose exec api black --check --exclude=migrations .
+	sudo docker compose exec api black --check --exclude=migrations.
 
 black-diff:
 	sudo docker compose exec api black --diff --exclude=migrations .
